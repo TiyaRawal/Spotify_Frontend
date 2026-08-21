@@ -1,0 +1,109 @@
+.premium-page{
+    padding:2rem;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.premium-page h1{
+    font-size:2.8rem;
+    margin-bottom:0.4rem;
+}
+
+.premium-subtitle{
+    color:#b3b3b3;
+    margin-bottom:2rem;
+    font-size:1rem;
+}
+
+.premium-card{
+    width:390px;
+    background:#242424;
+    border-radius:1rem;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+}
+
+.premium-offer{
+    background:#1ed760;
+    color:#000;
+    font-weight:700;
+    padding:1rem 1.5rem;
+    font-size:1.25rem;
+}
+
+.premium-logo{
+    display:flex;
+    align-items:center;
+    gap:0.5rem;
+    padding:1.5rem 1.5rem 0.8rem;
+    font-size:1.4rem;
+    font-weight:700;
+}
+
+.premium-logo i{
+    font-size:1.8rem;
+}
+
+.premium-card h2{
+    color:#1ed760;
+    font-size:3rem;
+    padding:0 1.5rem;
+    margin-bottom:0.5rem;
+}
+
+.premium-card h3{
+    padding:0 1.5rem;
+    font-size:1.8rem;
+    margin-bottom:0.2rem;
+}
+
+.premium-price{
+    color:#d3d3d3;
+    padding:0 1.5rem;
+    margin-bottom:1.5rem;
+}
+
+.premium-card hr{
+    border:none;
+    border-top:1px solid #3c3c3c;
+    margin:0 1.5rem 1.5rem;
+}
+
+.premium-card ul{
+    list-style:disc;
+    padding:0 2.5rem;
+    margin-bottom:2rem;
+}
+
+.premium-card ul li{
+    margin-bottom:0.9rem;
+    line-height:1.4;
+    font-size:1rem;
+}
+
+.premium-card button{
+    width:calc(100% - 3rem);
+    margin:0 1.5rem;
+    padding:1rem;
+    border:none;
+    border-radius:2rem;
+    background:#1ed760;
+    color:#000;
+    font-size:1rem;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.premium-card button:hover{
+    transform:scale(1.03);
+}
+
+.premium-note{
+    color:#b3b3b3;
+    font-size:0.8rem;
+    line-height:1.5;
+    padding:1.5rem;
+    text-align:center;
+}

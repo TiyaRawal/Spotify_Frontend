@@ -1,0 +1,146 @@
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:3rem; 
+    padding: 2rem 0 1rem;
+    width:100%;
+    box-sizing:border-box;
+}
+
+.nav-left{
+    display:flex;
+    align-items:center;
+    color: white;
+    width:55%;
+    min-width:0;
+}
+
+.head-logo{
+    font-size: 2.5rem;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.home-icon{
+    font-size: 1.5rem;
+    background-color: #1F1F1F;
+    padding: 0.5rem;
+    border-radius: 50%;
+    margin:0 1rem;
+    cursor: pointer;
+} 
+
+.home-icon:hover{
+    color: white;
+    background-color: #282828;
+}
+
+.home-icon a{
+    color: white;
+}
+
+.search-bar{
+    display:flex;
+    align-items:center; 
+    background-color: #1F1F1F;
+    height: 3rem;
+    width: 35rem;
+    border-radius: 20rem;
+    cursor: pointer;
+    border: none;
+    box-sizing: border-box;
+    min-width:0;
+}
+
+.search-bar:hover{
+    background-color: #282828;
+    border: none;
+}
+
+.search-icon{
+    font-size: 1.5rem;
+    padding: 0 0.5rem;
+    cursor: pointer;
+}
+
+.search-bar:hover .search-icon{
+    color: white;
+}
+
+.input-box{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 80%;
+    height: 100%;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+    box-sizing: border-box;
+}
+
+.input-box:hover,
+.input-box:focus,
+.input-box:active{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: white;
+}
+
+.browse-icon{
+    font-size: 1.5rem;
+    margin-left: 0.9rem;
+    cursor: pointer;
+}
+
+.browse-icon i{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    color: white;
+    width:45%;
+}
+
+.text{
+    padding: 0 1rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.text a{
+    color: white;
+    text-decoration: none;
+}
+
+.text:hover{
+    font-weight: 700;
+}
+
+.login-btn{
+    height: 3rem;
+    width: 7rem;
+    border-radius: 20rem;
+    border:none;
+    background-color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 1rem;
+}
+
+.login-btn:hover{
+    transform: scale(1.05);
+}
+
+.login-btn a{
+    color: black;
+    text-decoration: none;
+}

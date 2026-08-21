@@ -1,0 +1,167 @@
+.main{
+  width:100%;
+   height:40rem;
+   margin-top:1rem;
+   display: flex;
+   justify-content: space-around;
+   color:white;
+}
+
+.main-right{
+    width:81%;
+    height:100%;
+    background-color:#121212;
+    border-radius: 0.5rem;
+    overflow-y:scroll;
+}
+.main-right::-webkit-scrollbar{
+      display: none;
+}
+
+.music-card{
+    background-color: transparent;
+    width: 12rem;
+    flex-shrink: 0;
+    padding: 0.5em;
+    border-radius: 0.4rem;
+    position: relative;
+}
+
+.music-card img{
+    height:11rem;
+    width:100%;
+    padding: 0.3rem;
+    object-fit:cover;
+    object-position:center;
+    border-radius: 0.4rem;
+}
+
+.music-card:hover{
+    background-color: #1F1F1F;
+}
+
+.music-section{
+    margin: 2rem 0 2rem 2rem;
+}
+
+.songs{
+    margin:2rem 0;
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+}
+.songs::-webkit-scrollbar{
+    display: none;
+}
+
+.music-card h1{
+    margin:0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.music-card p{
+    font-size: 0.8rem;
+}
+
+.play-btn{
+    color:#3AE075;
+    background-color: black;
+    font-size: 2.5rem;
+    position: absolute;
+    width:2.5rem;
+    display: flex;
+    border-radius: 20rem;
+    transform: translate(7.5rem, -3.8rem);
+    opacity: 0;
+}
+
+.music-card:hover .play-btn{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+}
+
+.artist-card img{
+    border-radius:50%;
+}
+
+.login-popup-overlay{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.75);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    z-index:9999;
+}
+
+.login-popup{
+    position:relative;
+    width:32rem;
+    min-height:20rem;
+    background:linear-gradient(to bottom,#5b1717,#302020);
+    border-radius:0.6rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:3rem;
+    box-sizing:border-box;
+}
+
+.login-popup-close{
+    position:absolute;
+    top:1rem;
+    right:1.2rem;
+    background:none;
+    border:none;
+    color:#d0d0d0;
+    font-size:1.8rem;
+    cursor:pointer;
+}
+
+.login-popup-close:hover{
+    color:white;
+}
+
+.login-popup-content{
+    text-align:center;
+    color:white;
+    width:100%;
+}
+
+.login-popup-content h1{
+    font-size:2rem;
+    line-height:1.3;
+    margin:0 0 2rem 0;
+    font-weight:700;
+}
+
+.login-popup-signup{
+    display:inline-block;
+    background:#1ed760;
+    color:black;
+    text-decoration:none;
+    padding:0.9rem 2rem;
+    border-radius:2rem;
+    font-size:1rem;
+    font-weight:700;
+}
+
+.login-popup-signup:hover{
+    transform:scale(1.05);
+}
+
+.login-popup-content p{
+    margin-top:2rem;
+    color:#d0d0d0;
+    font-size:0.9rem;
+}
+
+.login-popup-content p a{
+    color:white;
+    font-weight:700;
+    margin-left:0.3rem;
+    text-decoration:underline;
+}

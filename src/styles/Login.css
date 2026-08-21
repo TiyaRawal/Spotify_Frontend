@@ -1,0 +1,143 @@
+.login-bg{
+    height: 59rem;
+    background-color:#121212;
+}
+
+.login-container{
+    width:25rem;
+    padding:1.25rem 1.50rem;
+    margin:auto;
+    text-align:center;
+}
+
+.logo{
+    width:3rem;
+    padding:1.5rem 0 1.8rem;
+    margin: auto ;
+    overflow:hidden;
+}
+
+.logo img{ 
+    width:100%;
+}
+
+.login-container h1{
+    font-size:2.7rem;
+    font-weight:800;
+    margin-bottom:1.5rem;
+}
+
+.icon-btn{
+    background-color: #121212;
+    width:22rem;
+    height: 3.3rem;
+    padding:1rem;
+    margin:0.2rem 0;
+    border:2px solid #5B5B5B;
+    color:white;
+    font-weight:600;
+    font-size:1rem;
+    text-align:center;
+    border-radius: 2rem;
+    cursor:pointer;
+    overflow: hidden;
+}
+
+.icon-btn img{
+    width:1.4rem;
+    height:1.4rem;
+    margin:0 0.6rem;
+    float:left;
+}
+
+.icon-btn:hover{
+    border:2px solid #ffffff;
+    transform: scale(1.03);
+}
+
+label{
+    display:block;
+    text-align:left;
+    font-size:1rem;
+    font-weight:600;
+    margin:0.5rem 1rem 0.2rem 0.1rem;
+}
+
+input{
+    width:22rem;
+    height: 3.3rem;
+    padding:1rem;
+    margin:0.5rem 0 1rem 0;
+    border:2px solid #5B5B5B;
+    color:white ;
+    font-weight:600;
+    font-size:1rem;
+    text-align:left;
+    border-radius: 0.3rem;
+    background-color:#121212;
+}
+
+input:hover{
+    border:2px solid #ffffff;
+}
+
+input:focus{
+    outline:none;
+    border:2px solid #ffffff;
+    text-align:left;
+    color:white ;
+}
+
+.continue-btn{
+    background-color: #1DB954;
+    width:22rem;
+    height: 3.3rem;
+    padding:1rem;
+    margin:0.2rem 0 1rem;
+    border:none;
+    color:black;
+    font-weight:600;
+    font-size:1rem;
+    text-align:center;
+    border-radius: 2rem;
+    cursor:pointer;
+}
+
+.continue-btn:hover{
+    background-color: #48e17d;
+    transform: scale(1.03);
+}
+
+span{
+    font-size:1rem;
+    margin:0.5rem 0 1rem 0;
+    display:block;
+}
+
+.account{
+    font-size:0.9rem;
+    margin:3.2rem 1rem 1rem 0;
+    display:block;
+}
+
+.account p{
+    padding:1rem ;
+}
+
+.account a{
+    color:white;
+    text-decoration:none;
+    font-weight:600;
+    padding:5rem;
+}
+
+.login-footer p{
+    background-color: #121212;
+    width:100%;
+    padding:3rem;
+    margin:0.2rem 0 1rem;
+    color:white;
+    font-weight:600;
+    font-size:0.7rem;
+    text-align:center;
+}

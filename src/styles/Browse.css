@@ -1,0 +1,39 @@
+.browse{
+    font-size: 0.8rem;
+    margin: 4rem 2rem 0 2rem;
+}
+
+.browse-section{
+    display:flex;
+    flex-wrap:wrap;
+    gap:1.8rem;
+    width:100%;
+    margin:2rem
+}
+
+.browse-cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:2rem;  
+    background-color: pink;
+    width:19rem;
+    height:11rem;
+    border-radius:0.6rem;
+    position:relative;
+    overflow:hidden;
+}
+
+.browse-cards h1{   
+    width:80%; 
+    color:white;
+    font-size:1.4rem;
+    padding:1rem 0 0 1rem;
+}
+
+.browse-cards img{
+    position:absolute;
+    width:9rem;
+    height:9rem;
+    transform: translate(11.5rem, 3rem) rotate(25deg);
+    background-color: red;
+}
