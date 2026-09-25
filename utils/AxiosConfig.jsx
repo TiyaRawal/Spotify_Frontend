@@ -3,7 +3,7 @@ import CheckToken from "./CheckToken";
 import Home from "../src/pages/Home";
 
 let api = axios.create({
-    baseURL: "https://spotify-backend-xcso.onrender.com",
+    baseURL: "http://localhost:8000",
 });
 
 api.interceptors.request.use((config) => {

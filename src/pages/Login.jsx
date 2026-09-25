@@ -17,6 +17,7 @@ function LoginForm() {
   let navigate=useNavigate();
   let [user,setUser]=useState({
     email:"",
+    password:"",
   })
 
   function HandleInputChange(e){
@@ -33,6 +34,7 @@ let HandleSubmit=async(e)=>{
         if(response.status===200){
             setUser({
             email:"",
+            password:"",
             })
             cookie.set("token",response.data.token);
             alert(response.data.message);
@@ -43,6 +45,7 @@ let HandleSubmit=async(e)=>{
     catch(e){
         setUser({
         email:"",
+        password:"",
         })
         alert(e.response?.data?.message || "Login failed!")
     }
@@ -57,7 +60,9 @@ let HandleSubmit=async(e)=>{
       <h1>Welcome back</h1>
       <form onSubmit={HandleSubmit}>
         <label htmlFor="email">Email</label>
-        <input onChange={HandleInputChange} value={user.email} type="email" id="email" name="email" required />
+        <input onChange={HandleInputChange} value={user.email} type="email" id="email" name="email" required placeholder="Enter email" />
+        <label htmlFor="password">Password</label>
+        <input onChange={HandleInputChange} value={user.password} type="password" id="password" name="password" placeholder="Enter password" required />
         <button className='continue-btn' type="submit">Continue</button>
       </form>
      
@@ -84,10 +89,5 @@ let HandleSubmit=async(e)=>{
 
   )
 }
-
-
-
-
-
 
 export default Login

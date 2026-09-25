@@ -7,6 +7,7 @@ function Signup(){
     let navigate = useNavigate();
     let[user,setUser]=useState({
         email:"",
+        password:"",
     })
 
     function HandelInputChange(e){
@@ -19,10 +20,17 @@ function Signup(){
 
     let HandelSubmit=async(e)=>{
         e.preventDefault();
+        let emailRegex=/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+    if(!emailRegex.test(user.email)){
+        alert("Please enter a valid email address");
+        return;
+    }
         try{
             let response=await api.post("/signup",user)
             setUser({
                 email:"",
+                password:"",
             })
             if(response.status===201){
                 alert(response.data.message);
@@ -31,6 +39,7 @@ function Signup(){
         }catch(e){
             setUser({
                 email:"",
+                password:"",
             })
             alert(e.response?.data?.message || "Signup failed")
         }
@@ -47,6 +56,8 @@ function Signup(){
       <form onSubmit={HandelSubmit}>
         <label htmlFor="email">Email address</label>
         <input onChange={HandelInputChange} value={user.email} type="email" id="email" name="email" placeholder="name@domain.com" required />
+        <label htmlFor="password">Password</label>
+        <input onChange={HandelInputChange} value={user.password} type="password" id="password" name="password" placeholder="Enter password" required />
         <button className='continue-btn' type="submit">Next</button>
       </form>
      

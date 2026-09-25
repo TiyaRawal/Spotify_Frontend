@@ -332,17 +332,9 @@ function DashboardNav({ search, setSearch, SearchSong, profile }) {
                 setShowProfile(false);
             }
         }
-
-        document.addEventListener(
-            "mousedown",
-            HandleClickOutside
-        );
-
+        document.addEventListener("mousedown", HandleClickOutside);
         return () => {
-            document.removeEventListener(
-                "mousedown",
-                HandleClickOutside
-            );
+            document.removeEventListener("mousedown", HandleClickOutside);
         };
     }, []);
 
@@ -419,6 +411,7 @@ function DashboardNav({ search, setSearch, SearchSong, profile }) {
 
 function DashboardSidebar() {
     const [playlists, setPlaylists] = useState([]);
+    const [likedSongs, setLikedSongs] = useState([]);
 
     async function FetchPlaylists() {
         try {
@@ -426,6 +419,17 @@ function DashboardSidebar() {
             setPlaylists(response.data.playlists);
         } catch (e) {
             console.log(e);
+        }
+    }
+
+    async function FetchLikedSongs(){
+        try{
+            let response=await api.get("/getlikedsong");
+            if(response.status===200){
+            setLikedSongs(response.data.songs);
+        }
+        }catch(e){
+           console.log(e);
         }
     }
 
@@ -442,6 +446,7 @@ function DashboardSidebar() {
 
     useEffect(() => {
         FetchPlaylists();
+        FetchLikedSongs();
     }, []);
 
     return (
@@ -470,7 +475,7 @@ function DashboardSidebar() {
 
                             <div className='playlist-info'>
                                 <h3>Liked Songs</h3>
-                                <p>Playlist 130 songs</p>
+                                <p>Playlist | {likedSongs.length} songs</p>
                             </div>
                         </div>
                     </Link>
